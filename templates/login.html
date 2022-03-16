@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login to D-Ex Community</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+        <style>
+            .margin-top {
+                margin-top: 30px;
+            }
+            .medium-margin-top {
+                margin-top: 60px;
+            }
+			
+        </style>
+		<div class="container">
+        <div class="row margin-top">
+            <div class="col-md-12">
+				<img src="https://image.flaticon.com/icons/png/512/1255/1255165.png" width="48" height="48" align="middle"></img>
+                <h1>Sign into your Green D-Ex Ac</h1>
+                <h4 style="color: darkgray">Your Local Decentralized Exchange for all things sustainable!</h4>
+            </div>
+        </div>
+		<div class="row small-margin-top">
+            <div class="col-md-1">
+			<form action="/login" method="post" id="login_form">
+				<input name='pk' placeholder='Enter Public Key'></input>
+				<input name='sk' type="password" placeholder='Enter Secret Key'></input>
+				<button type="submit" form="login_form">Login</button>
+			</form>
+			</div>
+		</div>
+</body>
+</html>

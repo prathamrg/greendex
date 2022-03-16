@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Live Offers</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<table border=1>
+<tr>
+	<th></th>
+    <th>Selling Asset</th>
+    <th>Issuer</th>
+    <th>Seller</th>
+	<th></th>
+	<th>Buying Asset</th>
+	<th>Qty</th>
+	<th>Price</th>
+	<th>Order Timestamp</th>
+</tr>
+{% for item in items %}    
+        <tr>
+			<td name="ASSET_ICON"><img src="{{ item.ASSET_ICON }}" width="24" height="24"></td>
+            <td name='ASSET'>{{ item.ASSET }}</td>
+            <td name='ISSUER'>{{ item.ISSUER }}</td>
+            <td name='SELLER'>{{ item.SELLER }}</td>
+			<td name='BUY_ASSET_ICON'><img src="{{ item.BUY_ASSET_ICON }}" width="24" height="24"></td>
+			<td name='BUY_ASSET'>{{ item.BUY_ASSET }}</td>
+            <td name='QTY'>{{ item.QTY }}</td>
+            <td name='PRICE'>{{ item.PRICE }}</td>
+			<td name='TIME'>{{ item.TIME }}</td>
+			
+        </tr>
+{% endfor %}
+</table>
+
+</html>
